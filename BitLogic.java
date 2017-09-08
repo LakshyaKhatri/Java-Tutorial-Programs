@@ -8,7 +8,15 @@ class BitLogic
 		int c = a | b;
 		int d = a & b;
 		int e = a ^ b;
-		int f = (~a & b)||(a & ~b);
-		int g = -a & 0x0f;
+		int f = (~a & b)|(a & ~b);
+		int g = ~a & 0x0f;
+
+		System.out.println("            a = " + binary[a]);   
+		System.out.println("            b = " + binary[b]);		
+		System.out.println("          a|b = " + binary[c]);		//or binary[a|b]
+		System.out.println("          a&b = " + binary[d]);		//or binary[a&b]
+		System.out.println("          a^b = " + binary[e]);		//or binary[a^b]
+		System.out.println("(~a&b)|(a&~b) = " + binary[f]);		//or binary[(~a & b) | (a & ~b)]
+		System.out.println("      ~a&0x0f = " + binary[g]);		//or binary[~a & 0x0f]
 	}
 }
