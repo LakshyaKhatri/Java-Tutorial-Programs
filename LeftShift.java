@@ -13,6 +13,7 @@ class LeftShift
 			 * it is a negative number hence it takes its 2's complement and displays it on screen
 			 * 
 			 */
+			// other than that the number is simply multiplied by two and gets printed on the screen
 			System.out.println(num);
 		}
 	}
